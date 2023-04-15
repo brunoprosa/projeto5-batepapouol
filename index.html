@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bate papo UOL</title>
+  </head>
+  <body>
+    <!--<div class="telaDeEntrada">
+        <img src="/driven/projeto5-batepapouol/images/logo.png">
+        <input type="text" id="name">
+        <button onclick="">Entrar</button>
+    </div>-->
+    <div class="header">
+        <div class="logo"><img src="/driven/projeto5-batepapouol/images/logo.png"></div>
+        <ion-icon name="people" onclick=""></ion-icon>
+    </div>
+    <div class="mensagens">
+        <div class="mensagem"><strong class="horario">(09:21:45) </strong> <strong class="nome"> João </strong>  entra na sala...</div>
+    </div>
+    <input type="text" id="enviarMensagem">
+    <ion-icon class="enviar" name="paper-plane-outline" onclick="enviarMensagem(this)"></ion-icon>
+    <div class="participantesAtivos escondido">
+        <h1>Escolha um contato
+            para enviar mensagem:</h1>
+        <div class="contatos"></div>
+        <h1>Escolha a visibilidade:</h1>
+        <div class="publico">
+            <ion-icon name="lock-open-outline"></ion-icon>Público
+            <ion-icon name="checkmark-outline"></ion-icon>
+        </div>
+        <div class="reservadamente">
+            <ion-icon name="lock-closed-outline"></ion-icon>Reservadamente
+            <ion-icon name="checkmark-outline"></ion-icon>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>

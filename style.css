@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #f3f3f3;
+    padding: 80px 0;
+}
+/*.telaDeEntrada{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+}
+.telaDeEntrada > img{
+    width: 130px;
+}
+.telaDeEntrada > input{
+    width: 70%;
+    height: 54px;
+
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+  
+    color: #AEAEAE;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+button{
+    width: 109px;
+    height: 45px;
+
+    color: #696969;
+    background: #E7E7E7;
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}*/
+.header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+.logo{
+    width: 100%;
+}
+.logo > img{
+    width: 72px;
+    height: 53px;
+}
+.header > ion-icon{
+    font-size: 43px;
+    color: black;
+}
+.mensagens{
+    padding: 0 8px;
+    font-size: 14px;
+    background-color: white;
+}
+.mensagem{
+    height: 40px;
+
+    background-color: inherit;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+}
+.horario{
+    color: #AAAAAA;
+}
+.nome{
+    font-weight: 700;
+}
+input#enviarMensagem{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 18px;
+    
+    width: 100%;
+    height: 80px;
+    padding-right: 58px;
+    border: none;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+.enviar{
+    position: fixed;
+    right: 18px;
+    bottom: 27px;
+    z-index: 3;
+
+    font-size: 28px;
+}
+.escondido{
+    display: none;
+}
+.cinza{
+    background-color: #DCDCDC;
+}
+.vermelho{
+    background-color: #FFDEDE;
+}

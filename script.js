@@ -37,6 +37,7 @@ function enviarMensagem(){
     const promise = axios.post('https://mock-api.driven.com.br/api/vm/uol/messages',mensagem);
     //mensagem.reset();
     promise.then(carregarMensagem);
+    promise.catch(recarregarPagina);
 }
 
 function carregarMensagem(){
@@ -57,4 +58,7 @@ function renderizarChat(resposta){
             mensagens.innerHTML += `<div class="mensagem" data-test="message"><strong class="horario">${resposta[i].time}</strong> <strong class="nome">${resposta[i].from}</strong> para <strong class="nome">${resposta[i].to}</strong>: ${resposta[i].text}</div>`;
         }
     }
+}
+function recarregarPagina(){
+    window.location.reload();
 }

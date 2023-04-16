@@ -99,7 +99,7 @@ button{
 .nome{
     font-weight: 700;
 }
-input#enviarMensagem{
+input#mensagem{
     position: fixed;
     z-index: 2;
     bottom: 0;

@@ -23,9 +23,10 @@
     </div>
     <div class="mensagens">
         <div class="mensagem"><strong class="horario">(09:21:45) </strong> <strong class="nome"> João </strong>  entra na sala...</div>
+        <div class="mensagem"><strong class="horario"></strong> <strong class="nome"></strong> para <strong class="nome"></strong>: </div>
     </div>
-    <input type="text" id="mensagem" placeholder="Escreva aqui...">
-    <ion-icon class="enviar" name="paper-plane-outline" onclick="enviarMensagem()"></ion-icon>
+    <input type="text" id="mensagem" placeholder="Escreva aqui..." data-test="input-message">
+    <ion-icon class="enviar" name="paper-plane-outline" onclick="enviarMensagem()" data-test="send-message"></ion-icon>
     <div class="participantesAtivos escondido">
         <h1>Escolha um contato
             para enviar mensagem:</h1>
